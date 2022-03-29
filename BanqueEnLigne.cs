@@ -1,13 +1,13 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 class BanqueOnline{
 
-  public List<Utilisateur> users = new List<Utilisateur>();
+  public List<Utilisateur> users = new List<Utilisateur>(); 
 
   private string name;
   private string address;
+
 
 
   public string Name{

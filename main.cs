@@ -32,7 +32,7 @@ class Program {
       users.Add(user);
     }
 
-    Console.WriteLine(users[0]);
+    Console.WriteLine(users[0]+"\n");
     manager.addUser(users[0], bankPhysic: LaPost);
 
     List<OperationBancaire> operations = new List<OperationBancaire>();
@@ -51,7 +51,10 @@ class Program {
       
     Console.WriteLine(operations[0]);
     manager.addOparation(users[0], operations[0]);
-    Console.WriteLine(users[0]);
+    Console.WriteLine(users[0]+"\n");
+
+    //affichage listes utilisateur
+    Console.WriteLine(manager.affichageUtilisateur(bankPhysic: LaPost));
   
   }
 }

@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 class Utilisateur{
@@ -15,31 +14,19 @@ class Utilisateur{
   }
   
   public string FirstName{
-    get {
-      return first;
-    }
-    set{
-      first = value;
-    }
+    get => first;
+    set => first = value;
   }
   public string LastName{
-    get{
-      return last;
-    }
-    set{
-      last = value;
-    }
+    get => last;
+    set => last = value; 
   }
   public int Solde{
-    get{
-      return solde;
-    } 
-    set{
-      solde = value;
-    }
+    get => solde;
+    set => solde = value;
   }
   
   public override string ToString(){
-    return $"{FirstName} {LastName}, solde : {Solde}";
+    return $"utilisateur : {FirstName} {LastName}, solde : {Solde}";
   }
 }

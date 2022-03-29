@@ -1,19 +1,13 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 class BanquePhysique{
 
-  public List<Utilisateur> users = new List<Utilisateur>(); 
+  public List<Utilisateur> users = new List<Utilisateur>(); //voir indexer pour getter / setter mettre en private
 
   private string name;
   private string address;
 
-  public List<Utilisateur> Users this[int index]
-  {
-    get => users[index];
-    set => users[index] = value;
-  }
 
   public string Name{
     get => name;

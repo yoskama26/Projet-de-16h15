@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-// 
+
 class OperationBancaire{
 
   private string typeOperation;
@@ -29,12 +29,14 @@ class OperationBancaire{
   }
   public void Afficher(){}
 
-  public void Historique(){} 
+  public void Historique(){} //pas encore
 
   public override string ToString(){
     return $"operation : {TypeOperation}, fait le {DateOperation}";
   }
 }
+
+
 public class SoldeIsNegativeOrNullException : Exception{
   public SoldeIsNegativeOrNullException(string message): base(message){
     
