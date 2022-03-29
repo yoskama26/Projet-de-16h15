@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-// sdlgjhs
+// 
 class OperationBancaire{
 
   private string typeOperation;
